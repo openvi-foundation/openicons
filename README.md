@@ -5,7 +5,7 @@
 **The icon library for OpenVue, continued.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/openicons/alpha.svg)](https://www.npmjs.com/package/openicons)
+[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons/alpha.svg)](https://www.npmjs.com/package/@openvue/openicons)
 
 </div>
 
@@ -21,11 +21,11 @@ OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 313 icons as a we
 > OpenIcons is currently in **alpha**. Install with the `alpha` tag.
 
 ```bash
-npm install openicons@alpha
+npm install @openvue/openicons@alpha
 ```
 
 ```js
-import 'openicons/openicons.css';
+import '@openvue/openicons/openicons.css';
 ```
 
 Then reference an icon by class:
@@ -51,12 +51,12 @@ The class prefix changed from `pi` to `oi` in this release. Existing markup keep
 
 ```diff
 - import 'primeicons/primeicons.css';
-+ import 'openicons/primeicons.css';
++ import '@openvue/openicons/primeicons.css';
 ```
 
 That entry point loads `openicons-compat.css`, which aliases every `.pi-*` class onto the new font. Nothing in your templates has to change.
 
-To move to the new prefix, import `openicons/openicons.css` instead and rename `pi pi-check` to `oi oi-check` throughout. Both stylesheets can be loaded at once during a gradual migration.
+To move to the new prefix, import `@openvue/openicons/openicons.css` instead and rename `pi pi-check` to `oi oi-check` throughout. Both stylesheets can be loaded at once during a gradual migration.
 
 One icon was removed rather than renamed: `pi-prime` was the PrimeTek logo mark, which the MIT license does not cover.
 
