@@ -1,16 +1,22 @@
 {
-  "name": "primeicons",
-  "version": "7.0.1-SNAPSHOT",
-  "description": "Icon Library for Prime UI Libraries",
+  "name": "openicons",
+  "version": "0.0.1-alpha.1",
+  "description": "Icon library for OpenVue and other OpenVi Foundation projects",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primefaces/primeicons.git"
+    "url": "git+https://github.com/openvi-foundation/openicons.git"
   },
-  "keywords": ["Icon"],
-  "author": "PrimeTek",
+  "keywords": ["icons", "icon-font", "openvue", "openvi"],
+  "author": "OpenVi Foundation",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/primefaces/primeicons/issues"
+    "url": "https://github.com/openvi-foundation/openicons/issues"
   },
-  "homepage": "https://github.com/primefaces/primeicons#readme"
+  "homepage": "https://github.com/openvi-foundation/openicons#readme",
+  "scripts": {
+    "build:compat": "node scripts/build-compat.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
