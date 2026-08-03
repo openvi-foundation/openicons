@@ -1,6 +1,6 @@
 {
   "name": "@openvue/openicons",
-  "version": "0.0.1-alpha.1",
+  "version": "1.0.0-beta.0",
   "description": "Icon library for OpenVue and other OpenVi Foundation projects",
   "repository": {
     "type": "git",
@@ -18,6 +18,14 @@
     "url": "https://github.com/openvi-foundation/openicons/issues"
   },
   "homepage": "https://github.com/openvi-foundation/openicons#readme",
+  "files": [
+    "fonts",
+    "raw-svg",
+    "openicons.css",
+    "openicons-compat.css",
+    "primeicons.css",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "pnpm build:font && pnpm build:compat && pnpm build:vue && pnpm build:docs",
     "build:font": "node scripts/build-font.mjs",

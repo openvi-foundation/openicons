@@ -2,6 +2,41 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## 1.0.0-beta.0
+
+The set is now maintained from its own source rather than round-tripped through IcoMoon, and
+ships as Vue components alongside the webfont.
+
+### Added
+
+- **10 icons**, bringing the set to 323: `battery`, `bluetooth`, `code-branch`, `keyboard`,
+  `laptop`, `layers`, `rss`, `sidebar`, `terminal`, `wifi-slash` (`U+EA3A`-`U+EA43`). Drawn on the
+  same 24x24 grid and weight as the rest of the set.
+- **`@openvue/openicons-vue`**, tree-shakeable Vue 3 components for every icon, with a `size` prop
+  and `fill="currentColor"`. Importing two icons costs 1.3 KB.
+- **`docs/index.html`**, a self-contained catalog: keyword search, 15 categories, size, density,
+  colour and theme controls, and copyable class, import, inline-SVG and codepoint snippets.
+- **`pnpm add-icon`**, which registers an icon into `selection.json` — the step that previously
+  required the IcoMoon app. Codepoints are assigned by increment and never reused.
+- **`pnpm normalize` / `pnpm check`**, which rewrite `raw-svg/` into one canonical form (24x24
+  viewBox, `<path>` only, paint-free so icons inherit `currentColor`) and verify that no
+  geometry moved.
+
+### Changed
+
+- `raw-svg/` filenames now match the names already in `selection.json`: `asteriks` to `asterisk`,
+  and `sort-{alpha,numeric}-alt-{down,up}` to `sort-{alpha,numeric}-{down,up}-alt`. No CSS class,
+  component name or codepoint changed.
+- Published files are an allowlist rather than an ignore list. The package contains the fonts,
+  stylesheets and `raw-svg/` only.
+
+### Removed
+
+- `demo.html` and `demo-files/`, IcoMoon's generated preview, superseded by `docs/index.html`.
+  Neither was ever part of the published package.
+
+No existing icon's codepoint moved.
+
 ## 0.0.1-alpha.1
 
 First release of OpenIcons, a community continuation of PrimeIcons 7.0.0 under the

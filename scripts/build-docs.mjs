@@ -67,6 +67,22 @@ const unknown = [...byName.keys()].filter((name) => !icons.some((icon) => icon.n
 if (uncategorised.length) throw new Error(`No category in scripts/categories.mjs for: ${uncategorised.join(', ')}`);
 if (unknown.length) throw new Error(`scripts/categories.mjs lists icons that no longer exist: ${unknown.join(', ')}`);
 
+/**
+ * The prose counts drift every time an icon is added, and a stale "313 icons" in the README is
+ * the kind of error nobody notices for months. Every count in the docs is written as "<n> icons"
+ * so one check can police them all.
+ */
+const stale = ['README.md', join('packages', 'vue', 'README.md')].flatMap((file) => {
+    const text = readFileSync(join(root, file), 'utf8');
+
+    return [...text.matchAll(/(\d[\d,]*) icons/g)]
+        .map((match) => Number(match[1].replace(/,/g, '')))
+        .filter((count) => count !== icons.length)
+        .map((count) => `${file} says "${count} icons"`);
+});
+
+if (stale.length) throw new Error(`Stale icon counts (the set has ${icons.length}): ${stale.join(', ')}`);
+
 const slug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 /** Sections in the order categories.mjs declares them, each holding its icons in name order. */
