@@ -5,7 +5,7 @@
 **The icon library for OpenVue, continued.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons/alpha.svg)](https://www.npmjs.com/package/@openvue/openicons)
+[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons/beta.svg)](https://www.npmjs.com/package/@openvue/openicons)
 
 </div>
 
@@ -18,10 +18,10 @@ OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 323 icons as a we
 ## Installation
 
 > [!NOTE]
-> OpenIcons is currently in **alpha**. Install with the `alpha` tag.
+> OpenIcons is currently in **beta**. Install with the `beta` tag.
 
 ```bash
-npm install @openvue/openicons@alpha
+npm install @openvue/openicons@beta
 ```
 
 ```js
@@ -48,7 +48,7 @@ Icons inherit `font-size` and `color` from their parent, so they scale with surr
 The webfont loads all 323 glyphs to show one, cannot be multicolored, and puts icons in the text layer where screen readers meet them. For Vue 3 apps, `@openvue/openicons-vue` ships each icon as a tree-shakeable SVG component instead — importing two icons costs under 1 KB.
 
 ```bash
-npm install @openvue/openicons-vue@alpha
+npm install @openvue/openicons-vue@beta
 ```
 
 ```vue
@@ -69,6 +69,25 @@ Icons default to `1em` and `currentColor`, so they follow surrounding text exact
 Open [`docs/index.html`](docs/index.html) to browse all 323 icons, grouped into 15 categories and searchable by name or keyword — `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint; the snippets follow the size and colour chosen in the sidebar. The page is self-contained, needs no server, and is not part of the published package.
 
 The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Every one is a 24×24 viewBox with no hardcoded fill, so it inherits `currentColor` when inlined.
+
+### New in this release
+
+Ten icons were added in `1.0.0-beta.0`, the first drawn for OpenIcons rather than inherited from PrimeIcons. They fill gaps the set had around developer and application UI, and are drawn on the same 24×24 grid at the same weight as the rest:
+
+| Icon | Class | Component |
+| --- | --- | --- |
+| Battery | `oi-battery` | `OiBattery` |
+| Bluetooth | `oi-bluetooth` | `OiBluetooth` |
+| Code branch | `oi-code-branch` | `OiCodeBranch` |
+| Keyboard | `oi-keyboard` | `OiKeyboard` |
+| Laptop | `oi-laptop` | `OiLaptop` |
+| Layers | `oi-layers` | `OiLayers` |
+| RSS | `oi-rss` | `OiRss` |
+| Sidebar | `oi-sidebar` | `OiSidebar` |
+| Terminal | `oi-terminal` | `OiTerminal` |
+| Wi-Fi off | `oi-wifi-slash` | `OiWifiSlash` |
+
+They occupy `U+EA3A`–`U+EA43`. No existing icon's codepoint moved, so upgrading cannot change which glyph an existing class renders.
 
 ## Migrating from PrimeIcons
 

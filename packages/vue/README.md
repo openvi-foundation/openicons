@@ -3,10 +3,10 @@
 Tree-shakeable Vue 3 SVG components for [OpenIcons](https://github.com/openvi-foundation/openicons) — 323 icons for OpenVue and other OpenVi Foundation projects.
 
 > [!NOTE]
-> Currently in **alpha**. Install with the `alpha` tag.
+> Currently in **beta**. Install with the `beta` tag.
 
 ```bash
-npm install @openvue/openicons-vue@alpha
+npm install @openvue/openicons-vue@beta
 ```
 
 ## Usage
