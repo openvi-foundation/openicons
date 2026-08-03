@@ -258,59 +258,121 @@ body.no-labels .icon { padding: 0.85rem 0.5rem; }
 }
 dialog {
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: 14px;
     background: var(--card);
     color: var(--fg);
     padding: 0;
-    width: min(440px, calc(100vw - 2rem));
+    width: min(560px, calc(100vw - 2rem));
+    max-height: min(680px, calc(100vh - 3rem));
+    overflow: hidden;
+    box-shadow: 0 24px 48px -12px rgb(0 0 0 / 0.35);
 }
-dialog::backdrop { background: rgb(0 0 0 / 0.4); }
-.sheet { padding: 1.25rem; }
-.sheet h2 { margin: 0 0 0.25rem; font-size: 1rem; }
-.sheet .tags { color: var(--muted); font-size: 12px; margin-bottom: 1rem; }
-.preview { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-.preview svg { fill: var(--icon, currentColor); }
+dialog::backdrop { background: rgb(8 10 14 / 0.55); backdrop-filter: blur(2px); }
+.sheet { display: flex; flex-direction: column; max-height: inherit; }
+.sheet-head {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 1.1rem 1.25rem;
+    border-bottom: 1px solid var(--line);
+}
+/* Fixed tile so the header keeps its height whatever preview size is selected. */
+.glyph {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg);
+}
+.glyph svg { fill: var(--icon, currentColor); }
+.sheet-title { flex: 1; min-width: 0; }
+.sheet-title h2 { margin: 0; font-size: 1.05rem; font-weight: 650; letter-spacing: -0.01em; }
+.close {
+    flex: none;
+    align-self: flex-start;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background: none;
+    color: var(--muted);
+    font: 16px/1 inherit;
+    cursor: pointer;
+}
+.close:hover { background: var(--hover); border-color: var(--line); color: var(--fg); }
+.meta { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.9rem 1.25rem 0; }
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    font: 500 11px inherit;
+    color: var(--muted);
+    background: none;
+}
+button.chip { cursor: pointer; }
+button.chip:hover { color: var(--accent); border-color: var(--accent); }
+.tabs { display: flex; gap: 0.25rem; padding: 0.9rem 1.25rem 0; border-bottom: 1px solid var(--line); }
+.tabs button {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: var(--muted);
+    padding: 0.35rem 0.15rem 0.55rem;
+    margin-right: 0.9rem;
+    font: 500 13px inherit;
+    cursor: pointer;
+}
+.tabs button:hover { color: var(--fg); }
+.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+.panels { padding: 1.1rem 1.25rem 1.25rem; overflow-y: auto; }
+.panel[hidden] { display: none; }
+.field + .field { margin-top: 0.9rem; }
+.field-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+}
 .snippet {
     display: flex;
     gap: 0.5rem;
-    align-items: center;
+    align-items: flex-start;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 0.5rem 0.65rem;
-    margin-bottom: 0.5rem;
+    border-radius: 9px;
+    padding: 0.6rem 0.7rem;
     background: var(--bg);
 }
 .snippet code {
     flex: 1;
-    font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
-    word-break: break-all;
+    font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
     /* Inlined SVG runs long; cap it rather than let one snippet stretch the dialog. */
-    max-height: 4.5em;
+    max-height: 7.5em;
     overflow: auto;
 }
-.hint { color: var(--muted); font-size: 11px; margin: 0.75rem 0 0; }
 .snippet button {
+    flex: none;
     border: 1px solid var(--line);
     background: var(--card);
     color: var(--muted);
     border-radius: 6px;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.55rem;
     font: 500 11px inherit;
     cursor: pointer;
-    flex: none;
 }
 .snippet button:hover { color: var(--accent); border-color: var(--accent); }
-.close {
-    width: 100%;
-    margin-top: 0.5rem;
-    border: 1px solid var(--line);
-    background: none;
-    color: var(--muted);
-    border-radius: 8px;
-    padding: 0.5rem;
-    font: inherit;
-    cursor: pointer;
-}
+.hint { color: var(--muted); font-size: 11px; margin: 1rem 0 0; }
 </style>
 <script>
 // Applied before first paint so a saved choice never flashes the other theme.
@@ -1756,18 +1818,50 @@ try {
 </div>
 </main>
 
-<dialog id="sheet">
+<dialog id="sheet" aria-labelledby="d-name">
 <div class="sheet">
-<div class="preview"><svg id="d-svg" viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"></svg>
-<div><h2 id="d-name"></h2><div class="tags" id="d-tags"></div></div>
+<div class="sheet-head">
+<span class="glyph"><svg id="d-svg" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"></svg></span>
+<div class="sheet-title">
+<h2 id="d-name"></h2>
 </div>
+<button class="close" type="button" id="d-close" aria-label="Close">&#215;</button>
+</div>
+<div class="meta">
+<span class="chip" id="d-category"></span>
+<button type="button" class="chip" data-copy="d-code" title="Copy codepoint"><span id="d-code"></span></button>
+<span class="chip" id="d-preview"></span>
+</div>
+<div class="tabs" role="tablist">
+<button type="button" role="tab" id="tab-css" aria-controls="panel-css" aria-selected="true" data-tab="css">CSS class</button>
+<button type="button" role="tab" id="tab-vue" aria-controls="panel-vue" aria-selected="false" data-tab="vue">Vue</button>
+<button type="button" role="tab" id="tab-svg" aria-controls="panel-svg" aria-selected="false" data-tab="svg">SVG</button>
+</div>
+<div class="panels">
+<div class="panel" id="panel-css" role="tabpanel" aria-labelledby="tab-css" data-panel="css">
+<div class="field">
+<div class="field-label"><span>Markup</span><span>needs openicons.css</span></div>
 <div class="snippet"><code id="d-class"></code><button type="button" data-copy="d-class">Copy</button></div>
+</div>
+</div>
+<div class="panel" id="panel-vue" role="tabpanel" aria-labelledby="tab-vue" data-panel="vue" hidden>
+<div class="field">
+<div class="field-label"><span>Import</span><span>@openvue/openicons-vue</span></div>
 <div class="snippet"><code id="d-import"></code><button type="button" data-copy="d-import">Copy</button></div>
+</div>
+<div class="field">
+<div class="field-label"><span>Template</span></div>
 <div class="snippet"><code id="d-usage"></code><button type="button" data-copy="d-usage">Copy</button></div>
+</div>
+</div>
+<div class="panel" id="panel-svg" role="tabpanel" aria-labelledby="tab-svg" data-panel="svg" hidden>
+<div class="field">
+<div class="field-label"><span>Inline SVG</span><span>no dependencies</span></div>
 <div class="snippet"><code id="d-svg-code"></code><button type="button" data-copy="d-svg-code">Copy</button></div>
-<div class="snippet"><code id="d-code"></code><button type="button" data-copy="d-code">Copy</button></div>
+</div>
+</div>
 <p class="hint">Snippets follow the size and color set in Options.</p>
-<button class="close" type="button" id="d-close">Close</button>
+</div>
 </div>
 </dialog>
 
@@ -1931,12 +2025,13 @@ const sheet = document.getElementById('sheet');
 const fields = {
     svg: document.getElementById('d-svg'),
     name: document.getElementById('d-name'),
-    tags: document.getElementById('d-tags'),
     cls: document.getElementById('d-class'),
     imp: document.getElementById('d-import'),
     usage: document.getElementById('d-usage'),
     markup: document.getElementById('d-svg-code'),
-    code: document.getElementById('d-code')
+    code: document.getElementById('d-code'),
+    category: document.getElementById('d-category'),
+    preview: document.getElementById('d-preview')
 };
 let selected = null;
 
@@ -1958,6 +2053,19 @@ function renderSnippets() {
     fields.usage.textContent = '<' + component + ' :size="' + size.value + '"' + (color ? ' style="color: ' + color + '"' : '') + ' />';
     fields.markup.textContent = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="' + size.value +
         '" height="' + size.value + '" fill="' + (color || 'currentColor') + '">' + paths + '</svg>';
+    fields.preview.textContent = size.value + 'px · ' + (color || 'currentColor');
+}
+
+const tabs = document.querySelectorAll('.tabs button');
+
+for (const tab of tabs) {
+    tab.addEventListener('click', () => {
+        for (const other of tabs) other.setAttribute('aria-selected', String(other === tab));
+
+        for (const panel of document.querySelectorAll('.panel')) {
+            panel.hidden = panel.dataset.panel !== tab.dataset.tab;
+        }
+    });
 }
 
 results.addEventListener('click', (event) => {
@@ -1970,13 +2078,18 @@ results.addEventListener('click', (event) => {
     selected = { name, component, paths: card.querySelector('svg').innerHTML };
     fields.svg.innerHTML = selected.paths;
     fields.name.textContent = name;
-    fields.tags.textContent = card.dataset.terms.split(' ').filter((t) => t !== name).join(', ');
     fields.code.textContent = 'U+' + code.toUpperCase();
+    fields.category.textContent = card.closest('.group').dataset.category;
     renderSnippets();
     sheet.showModal();
 });
 
 document.getElementById('d-close').addEventListener('click', () => sheet.close());
+
+// Clicking the backdrop closes: the click lands on <dialog> itself, never on the panel inside it.
+sheet.addEventListener('click', (event) => {
+    if (event.target === sheet) sheet.close();
+});
 
 for (const button of document.querySelectorAll('[data-copy]')) {
     button.addEventListener('click', async () => {
