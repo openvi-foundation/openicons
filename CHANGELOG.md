@@ -2,6 +2,15 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## 1.0.0-beta.1
+
+Documentation only; the packages are unchanged from `1.0.0-beta.0`.
+
+- Install instructions and the npm badge point at the `beta` tag. The published
+  `1.0.0-beta.0` readme still told readers to install `@alpha`, which resolves to
+  `0.0.1-alpha.1` — the build from before the ten new icons.
+- The readme lists the icons added in this release with their class and component names.
+
 ## 1.0.0-beta.0
 
 The set is now maintained from its own source rather than round-tripped through IcoMoon, and
