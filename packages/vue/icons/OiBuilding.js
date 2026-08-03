@@ -1,0 +1,3 @@
+import { createIcon } from '../runtime.js';
+
+export default createIcon('OiBuilding', [['M18.25 19.25h-0.5V4a0.76 0.76 0 0 0-0.75-0.75H7a0.76 0.76 0 0 0-0.75 0.75v15.25h-0.5a0.75 0.75 0 0 0 0 1.5h12.5a0.75 0.75 0 0 0 0-1.5m-2 0H11V17a0.5 0.5 0 0 0-0.5-0.5h-1a0.5 0.5 0 0 0-0.5 0.5v2.25H7.75V4.75h8.5Z']]);

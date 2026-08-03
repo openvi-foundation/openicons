@@ -499,20 +499,20 @@
     content: "\e9c9";
 }
 
-.pi-sun:before {
-    content: "\e9c8";
-}
-
 .pi-moon:before {
     content: "\e9c7";
 }
 
-.pi-vimeo:before {
-    content: "\e9c6";
+.pi-sun:before {
+    content: "\e9c8";
 }
 
 .pi-youtube:before {
     content: "\e9c5";
+}
+
+.pi-vimeo:before {
+    content: "\e9c6";
 }
 
 .pi-flag:before {
@@ -1055,16 +1055,16 @@
     content: "\e93d";
 }
 
-.pi-external-link:before {
-    content: "\e93c";
+.pi-window-minimize:before {
+    content: "\e93a";
 }
 
 .pi-window-maximize:before {
     content: "\e93b";
 }
 
-.pi-window-minimize:before {
-    content: "\e93a";
+.pi-external-link:before {
+    content: "\e93c";
 }
 
 .pi-refresh:before {
@@ -1301,4 +1301,44 @@
 
 .pi-spinner:before {
     content: "\e926";
+}
+
+.pi-laptop:before {
+    content: "\ea3a";
+}
+
+.pi-keyboard:before {
+    content: "\ea3b";
+}
+
+.pi-terminal:before {
+    content: "\ea3c";
+}
+
+.pi-battery:before {
+    content: "\ea3d";
+}
+
+.pi-bluetooth:before {
+    content: "\ea3e";
+}
+
+.pi-layers:before {
+    content: "\ea3f";
+}
+
+.pi-code-branch:before {
+    content: "\ea40";
+}
+
+.pi-sidebar:before {
+    content: "\ea41";
+}
+
+.pi-rss:before {
+    content: "\ea42";
+}
+
+.pi-wifi-slash:before {
+    content: "\ea43";
 }

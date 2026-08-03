@@ -1,0 +1,3 @@
+import { createIcon } from '../runtime.js';
+
+export default createIcon('OiSortDown', [['M12 16.25a0.74 0.74 0 0 1-0.53-0.22l-7-7A0.75 0.75 0 0 1 5 7.75h14A0.75 0.75 0 0 1 19.53 9l-7 7a0.74 0.74 0 0 1-0.53 0.25m-5.19-7L12 14.44l5.19-5.19Z']]);

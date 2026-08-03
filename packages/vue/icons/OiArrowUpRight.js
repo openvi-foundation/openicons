@@ -1,0 +1,3 @@
+import { createIcon } from '../runtime.js';
+
+export default createIcon('OiArrowUpRight', [['M8.46 6.3a0.75 0.75 0 1 0 0 1.5h6.68l-8.62 8.62a0.75 0.75 0 1 0 1.06 1.06l8.62-8.62v6.68a0.75 0.75 0 0 0 1.5 0V7.05a0.8 0.8 0 0 0-0.06-0.29 0.76 0.76 0 0 0-0.64-0.46Z']]);

@@ -6,7 +6,12 @@
     "type": "git",
     "url": "git+https://github.com/openvi-foundation/openicons.git"
   },
-  "keywords": ["icons", "icon-font", "openvue", "openvi"],
+  "keywords": [
+    "icons",
+    "icon-font",
+    "openvue",
+    "openvi"
+  ],
   "author": "OpenVi Foundation",
   "license": "MIT",
   "bugs": {
@@ -14,9 +19,28 @@
   },
   "homepage": "https://github.com/openvi-foundation/openicons#readme",
   "scripts": {
-    "build:compat": "node scripts/build-compat.mjs"
+    "build": "pnpm build:font && pnpm build:compat && pnpm build:vue && pnpm build:docs",
+    "build:font": "node scripts/build-font.mjs",
+    "build:compat": "node scripts/build-compat.mjs",
+    "build:vue": "node scripts/build-vue.mjs",
+    "build:docs": "node scripts/build-docs.mjs",
+    "normalize": "node scripts/normalize-svg.mjs",
+    "check": "node scripts/normalize-svg.mjs --check",
+    "add-icon": "node scripts/add-icon.mjs"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@vue/server-renderer": "^3.5.40",
+    "esbuild": "^0.28.1",
+    "svg2ttf": "^6.1.0",
+    "svgicons2svgfont": "^16.0.0",
+    "svgo": "^4.0.2",
+    "svgpath": "^2.6.0",
+    "ttf2eot": "^3.1.0",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^8.0.1",
+    "vue": "^3.5.40"
   }
 }

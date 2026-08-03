@@ -43,7 +43,32 @@ Icons inherit `font-size` and `color` from their parent, so they scale with surr
 
 `oi-fw` gives an icon a fixed width, useful for aligning lists of menu items.
 
-Open [`demo.html`](demo.html) from a clone of this repository to browse every icon and its class name. The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually.
+### Vue components
+
+The webfont loads all 313 glyphs to show one, cannot be multicolored, and puts icons in the text layer where screen readers meet them. For Vue 3 apps, `@openvue/openicons-vue` ships each icon as a tree-shakeable SVG component instead — importing two icons costs under 1 KB.
+
+```bash
+npm install @openvue/openicons-vue@alpha
+```
+
+```vue
+<script setup>
+import OiCheck from '@openvue/openicons-vue/icons/OiCheck';
+</script>
+
+<template>
+  <OiCheck />
+  <OiCheck :size="32" title="Saved" />
+</template>
+```
+
+Icons default to `1em` and `currentColor`, so they follow surrounding text exactly as the font does. They are `aria-hidden` unless given a `title`, which promotes them to `role="img"` with an accessible name.
+
+### Browsing the set
+
+Open [`docs/index.html`](docs/index.html) to search all 313 icons by name or keyword — `create` finds `folder-plus`, `chart` also finds `table` — and copy the class name, component import or codepoint for any of them. The page is self-contained and needs no server.
+
+The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Every one is a 24×24 viewBox with no hardcoded fill, so it inherits `currentColor` when inlined.
 
 ## Migrating from PrimeIcons
 
@@ -75,7 +100,31 @@ The fork spans the full toolchain, each piece maintained under the [openvi-found
 
 We're building the initial maintainer team now. Issues and pull requests are open, and we'd welcome the help.
 
-The font itself is generated with [IcoMoon](https://icomoon.io) from [`selection.json`](selection.json). If you change the icon set, regenerate the font files and then run `npm run build:compat` to rebuild the compatibility stylesheet — `openicons-compat.css` is generated and should never be edited by hand.
+### Building
+
+Everything generated in this repository is built locally — no hosted tooling and no browser step:
+
+```bash
+pnpm install
+pnpm build
+```
+
+| Script | Output |
+| --- | --- |
+| `pnpm build:font` | `fonts/*` and the glyph rules of `openicons.css` |
+| `pnpm build:compat` | `openicons-compat.css` |
+| `pnpm build:vue` | `packages/vue/` components |
+| `pnpm build:docs` | `docs/index.html` |
+| `pnpm normalize` | rewrites `raw-svg/` into canonical form |
+| `pnpm check` | fails if any icon is not normalized |
+
+`openicons.css`, `openicons-compat.css`, `fonts/`, `packages/vue/` and `docs/` are all generated. Edit `raw-svg/`, `selection.json`, or the scripts instead.
+
+The font build reads geometry and codepoints from [`selection.json`](selection.json), not from `raw-svg/`. IcoMoon normalized every icon individually when it produced the original font, so rebuilding from the 24×24 artwork would silently resize all 313 icons relative to what is already published. Keeping `selection.json` as the font's source makes the build reproducible against the shipped font — verified byte-identical geometry across the set.
+
+[IcoMoon](https://icomoon.io) is still the editing surface: load `selection.json` there to add icons or reassign codepoints, then export it back and run `pnpm build`. The build no longer depends on it.
+
+The font build is deterministic — set `SOURCE_DATE_EPOCH` to stamp a real date into a release.
 
 ## License
 

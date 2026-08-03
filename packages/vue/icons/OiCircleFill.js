@@ -1,0 +1,3 @@
+import { createIcon } from '../runtime.js';
+
+export default createIcon('OiCircleFill', [['M12 3a9 9 0 1 0 0 18 9 9 0 1 0 0-18']]);

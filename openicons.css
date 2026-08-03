@@ -520,20 +520,20 @@
     content: "\e9c9";
 }
 
-.oi-sun:before {
-    content: "\e9c8";
-}
-
 .oi-moon:before {
     content: "\e9c7";
 }
 
-.oi-vimeo:before {
-    content: "\e9c6";
+.oi-sun:before {
+    content: "\e9c8";
 }
 
 .oi-youtube:before {
     content: "\e9c5";
+}
+
+.oi-vimeo:before {
+    content: "\e9c6";
 }
 
 .oi-flag:before {
@@ -1076,22 +1076,22 @@
     content: "\e93d";
 }
 
-.oi-external-link:before {
-    content: "\e93c";
+.oi-window-minimize:before {
+    content: "\e93a";
 }
 
 .oi-window-maximize:before {
     content: "\e93b";
 }
 
-.oi-window-minimize:before {
-    content: "\e93a";
+.oi-external-link:before {
+    content: "\e93c";
 }
 
 .oi-refresh:before {
     content: "\e938";
 }
-  
+
 .oi-user:before {
     content: "\e939";
 }
@@ -1322,4 +1322,44 @@
 
 .oi-spinner:before {
     content: "\e926";
+}
+
+.oi-laptop:before {
+    content: "\ea3a";
+}
+
+.oi-keyboard:before {
+    content: "\ea3b";
+}
+
+.oi-terminal:before {
+    content: "\ea3c";
+}
+
+.oi-battery:before {
+    content: "\ea3d";
+}
+
+.oi-bluetooth:before {
+    content: "\ea3e";
+}
+
+.oi-layers:before {
+    content: "\ea3f";
+}
+
+.oi-code-branch:before {
+    content: "\ea40";
+}
+
+.oi-sidebar:before {
+    content: "\ea41";
+}
+
+.oi-rss:before {
+    content: "\ea42";
+}
+
+.oi-wifi-slash:before {
+    content: "\ea43";
 }
