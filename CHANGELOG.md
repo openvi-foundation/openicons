@@ -2,6 +2,18 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## 1.0.0
+
+First stable release. The packages are unchanged from `1.0.0-beta.1`; this promotes that build
+after the beta period without further edits to the icons.
+
+- `@openvue/openicons` and `@openvue/openicons-vue` both leave prerelease and publish to the
+  `latest` tag. Installing either without a tag now resolves to 1.0.0.
+- Install instructions drop the `@beta` tag, and the npm badge tracks `latest`.
+
+The set is 323 icons. Every codepoint, CSS class and component name from the betas is unchanged,
+so upgrading from `1.0.0-beta.0` or `1.0.0-beta.1` is a version bump with no migration.
+
 ## 1.0.0-beta.1
 
 Documentation only; the packages are unchanged from `1.0.0-beta.0`.

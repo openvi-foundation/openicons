@@ -5,7 +5,7 @@
 **The icon library for OpenVue, continued.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons/beta.svg)](https://www.npmjs.com/package/@openvue/openicons)
+[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons.svg)](https://www.npmjs.com/package/@openvue/openicons)
 
 </div>
 
@@ -17,11 +17,8 @@ OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 323 icons as a we
 
 ## Installation
 
-> [!NOTE]
-> OpenIcons is currently in **beta**. Install with the `beta` tag.
-
 ```bash
-npm install @openvue/openicons@beta
+npm install @openvue/openicons
 ```
 
 ```js
@@ -48,7 +45,7 @@ Icons inherit `font-size` and `color` from their parent, so they scale with surr
 The webfont loads all 323 glyphs to show one, cannot be multicolored, and puts icons in the text layer where screen readers meet them. For Vue 3 apps, `@openvue/openicons-vue` ships each icon as a tree-shakeable SVG component instead — importing two icons costs under 1 KB.
 
 ```bash
-npm install @openvue/openicons-vue@beta
+npm install @openvue/openicons-vue
 ```
 
 ```vue
@@ -72,7 +69,7 @@ The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Eve
 
 ### New in this release
 
-Ten icons were added in `1.0.0-beta.0`, the first drawn for OpenIcons rather than inherited from PrimeIcons. They fill gaps the set had around developer and application UI, and are drawn on the same 24×24 grid at the same weight as the rest:
+Ten icons were added in `1.0.0`, the first drawn for OpenIcons rather than inherited from PrimeIcons. They fill gaps the set had around developer and application UI, and are drawn on the same 24×24 grid at the same weight as the rest:
 
 | Icon | Class | Component |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 {
   "name": "@openvue/openicons-vue",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Tree-shakeable Vue 3 SVG components for OpenIcons",
   "repository": {
     "type": "git",
