@@ -111,6 +111,7 @@ export { default as OiDirections } from './icons/OiDirections.js';
 export { default as OiDiscord } from './icons/OiDiscord.js';
 export { default as OiDollar } from './icons/OiDollar.js';
 export { default as OiDownload } from './icons/OiDownload.js';
+export { default as OiDragIndicator } from './icons/OiDragIndicator.js';
 export { default as OiEject } from './icons/OiEject.js';
 export { default as OiEllipsisH } from './icons/OiEllipsisH.js';
 export { default as OiEllipsisV } from './icons/OiEllipsisV.js';

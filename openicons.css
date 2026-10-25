@@ -1363,3 +1363,7 @@
 .oi-wifi-slash:before {
     content: "\ea43";
 }
+
+.oi-drag-indicator:before {
+    content: "\ea44";
+}

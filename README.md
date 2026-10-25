@@ -13,7 +13,7 @@
 
 OpenIcons is a community-maintained continuation of PrimeIcons, the icon font used by PrimeVue and the wider Prime ecosystem, following its archival by the original maintainers. The project is stewarded by [openvi-foundation](https://github.com/openvi-foundation), an independent organization of experienced developers who use these libraries in production and are committed to keeping them maintained, stable, and open.
 
-OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 323 icons as a webfont, with no dependencies and no build step required.
+OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 324 icons as a webfont, with no dependencies and no build step required.
 
 ## Installation
 
@@ -63,7 +63,7 @@ Icons default to `1em` and `currentColor`, so they follow surrounding text exact
 
 ### Browsing the set
 
-Open [`docs/index.html`](docs/index.html) to browse all 323 icons, grouped into 15 categories and searchable by name or keyword — `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint; the snippets follow the size and colour chosen in the sidebar. The page is self-contained, needs no server, and is not part of the published package.
+Open [`docs/index.html`](docs/index.html) to browse all 324 icons, grouped into 15 categories and searchable by name or keyword — `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint; the snippets follow the size and colour chosen in the sidebar. The page is self-contained, needs no server, and is not part of the published package.
 
 The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Every one is a 24×24 viewBox with no hardcoded fill, so it inherits `currentColor` when inlined.
 
@@ -137,7 +137,7 @@ pnpm build
 
 `openicons.css`, `openicons-compat.css`, `fonts/`, `packages/vue/` and `docs/` are all generated. Edit `raw-svg/`, `selection.json`, or the scripts instead.
 
-The font build reads geometry and codepoints from [`selection.json`](selection.json), not from `raw-svg/`. IcoMoon normalized every icon individually when it produced the original font, so rebuilding from the 24×24 artwork would silently resize all 323 icons relative to what is already published. Keeping `selection.json` as the font's source makes the build reproducible against the shipped font — verified byte-identical geometry across the set.
+The font build reads geometry and codepoints from [`selection.json`](selection.json), not from `raw-svg/`. IcoMoon normalized every icon individually when it produced the original font, so rebuilding from the 24×24 artwork would silently resize all 324 icons relative to what is already published. Keeping `selection.json` as the font's source makes the build reproducible against the shipped font — verified byte-identical geometry across the set.
 
 ### Adding an icon
 

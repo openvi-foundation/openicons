@@ -1,6 +1,6 @@
 # @openvue/openicons-vue
 
-Tree-shakeable Vue 3 SVG components for [OpenIcons](https://github.com/openvi-foundation/openicons) — 323 icons for OpenVue and other OpenVi Foundation projects.
+Tree-shakeable Vue 3 SVG components for [OpenIcons](https://github.com/openvi-foundation/openicons) — 324 icons for OpenVue and other OpenVi Foundation projects.
 
 ```bash
 npm install @openvue/openicons-vue
@@ -28,7 +28,7 @@ The barrel import is tree-shaken just as well by any modern bundler, if you pref
 import { OiCheck, OiTrash } from '@openvue/openicons-vue';
 ```
 
-Importing two icons from the barrel produces a 1.3 KB bundle (667 bytes gzipped); all 323 icons come to 166 KB (44 KB gzipped).
+Importing two icons from the barrel produces a 1.3 KB bundle (667 bytes gzipped); all 324 icons come to 166 KB (44 KB gzipped).
 
 ## Props
 
@@ -69,7 +69,7 @@ Browse and search the full set in [`docs/index.html`](https://github.com/openvi-
 
 ## Relationship to the webfont
 
-This package and [`@openvue/openicons`](https://www.npmjs.com/package/@openvue/openicons) cover the same 323 icons. Use the font when you want a drop-in `<i class="oi oi-check">` or are migrating from PrimeIcons; use these components when you want per-icon bundling and real SVG in the DOM.
+This package and [`@openvue/openicons`](https://www.npmjs.com/package/@openvue/openicons) cover the same 324 icons. Use the font when you want a drop-in `<i class="oi oi-check">` or are migrating from PrimeIcons; use these components when you want per-icon bundling and real SVG in the DOM.
 
 ## License
 

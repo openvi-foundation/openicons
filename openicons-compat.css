@@ -1342,3 +1342,7 @@
 .pi-wifi-slash:before {
     content: "\ea43";
 }
+
+.pi-drag-indicator:before {
+    content: "\ea44";
+}

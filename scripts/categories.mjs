@@ -29,7 +29,7 @@ export const categories = {
         'exclamation-triangle', 'eye', 'eye-slash', 'info', 'info-circle', 'layers', 'minus', 'minus-circle',
         'plus', 'plus-circle', 'power-off', 'question', 'question-circle', 'search', 'search-minus',
         'search-plus', 'sliders-h', 'sliders-v', 'spinner', 'spinner-dotted', 'times', 'times-circle',
-        'window-maximize', 'window-minimize', 'lightbulb', 'sparkles'
+        'window-maximize', 'window-minimize', 'lightbulb', 'sparkles', 'drag-indicator'
     ],
     'Editing & Tools': [
         'bookmark', 'bookmark-fill', 'clipboard', 'clone', 'copy', 'delete-left', 'eraser', 'flag',
