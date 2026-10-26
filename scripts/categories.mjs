@@ -41,7 +41,8 @@ export const categories = {
     'Text & Layout': [
         'align-center', 'align-justify', 'align-left', 'align-right', 'asterisk', 'equals', 'filter',
         'filter-fill', 'filter-slash', 'hashtag', 'language', 'list', 'list-check', 'objects-column',
-        'percentage', 'sidebar', 'sitemap', 'sort', 'sort-alpha-down', 'sort-alpha-down-alt', 'sort-alpha-up',
+        'percentage', 'sidebar', 'sidebar-right', 'sidebar-open', 'sidebar-close', 'sidebar-right-open',
+        'sidebar-right-close', 'sitemap', 'sort', 'sort-alpha-down', 'sort-alpha-down-alt', 'sort-alpha-up',
         'sort-alpha-up-alt', 'sort-alt', 'sort-alt-slash', 'sort-amount-down', 'sort-amount-down-alt',
         'sort-amount-up', 'sort-amount-up-alt', 'sort-down', 'sort-down-fill', 'sort-numeric-down',
         'sort-numeric-down-alt', 'sort-numeric-up', 'sort-numeric-up-alt', 'sort-up', 'sort-up-fill',
