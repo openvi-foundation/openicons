@@ -34,6 +34,7 @@
     "build:docs": "node scripts/build-docs.mjs",
     "normalize": "node scripts/normalize-svg.mjs",
     "check": "node scripts/normalize-svg.mjs --check",
+    "check:codepoints": "node scripts/check-codepoints.mjs",
     "add-icon": "node scripts/add-icon.mjs"
   },
   "publishConfig": {

@@ -5,7 +5,11 @@
 **The icon library for OpenVue, continued.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons.svg)](https://www.npmjs.com/package/@openvue/openicons)
+[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons.svg?label=%40openvue%2Fopenicons)](https://www.npmjs.com/package/@openvue/openicons)
+[![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons-vue.svg?label=%40openvue%2Fopenicons-vue)](https://www.npmjs.com/package/@openvue/openicons-vue)
+[![npm downloads](https://img.shields.io/npm/dt/%40openvue%2Fopenicons.svg)](https://www.npmjs.com/package/@openvue/openicons)
+
+[**Browse icons**](docs/index.html) · [**Vue components**](packages/vue/README.md) · [**Migrate from PrimeIcons**](#migrating-from-primeicons) · [**Changelog**](CHANGELOG.md)
 
 </div>
 
@@ -13,7 +17,7 @@
 
 OpenIcons is a community-maintained continuation of PrimeIcons, the icon font used by PrimeVue and the wider Prime ecosystem, following its archival by the original maintainers. The project is stewarded by [openvi-foundation](https://github.com/openvi-foundation), an independent organization of experienced developers who use these libraries in production and are committed to keeping them maintained, stable, and open.
 
-OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 324 icons as a webfont, with no dependencies and no build step required.
+OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 324 icons as a webfont and as Vue 3 components, with no runtime dependencies.
 
 ## Installation
 
@@ -40,9 +44,9 @@ Icons inherit `font-size` and `color` from their parent, so they scale with surr
 
 `oi-fw` gives an icon a fixed width, useful for aligning lists of menu items.
 
-### Vue components
+## Vue components
 
-The webfont loads all 323 glyphs to show one, cannot be multicolored, and puts icons in the text layer where screen readers meet them. For Vue 3 apps, `@openvue/openicons-vue` ships each icon as a tree-shakeable SVG component instead — importing two icons costs under 1 KB.
+The webfont loads every glyph to show one, cannot be multicolored, and puts icons in the text layer where screen readers meet them. For Vue 3 apps, `@openvue/openicons-vue` ships each icon as a tree-shakeable SVG component instead. Importing two icons costs under 1 KB.
 
 ```bash
 npm install @openvue/openicons-vue
@@ -59,36 +63,17 @@ import OiCheck from '@openvue/openicons-vue/icons/OiCheck';
 </template>
 ```
 
-Icons default to `1em` and `currentColor`, so they follow surrounding text exactly as the font does. They are `aria-hidden` unless given a `title`, which promotes them to `role="img"` with an accessible name.
+Icons default to `1em` and `currentColor`, so they follow surrounding text exactly as the font does. They are `aria-hidden` unless given a `title`, which promotes them to `role="img"` with an accessible name. See the [package README](packages/vue/README.md) for all props.
 
-### Browsing the set
+## Browsing the set
 
-Open [`docs/index.html`](docs/index.html) to browse all 324 icons, grouped into 15 categories and searchable by name or keyword — `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint; the snippets follow the size and colour chosen in the sidebar. The page is self-contained, needs no server, and is not part of the published package.
+Open [`docs/index.html`](docs/index.html) to browse all 324 icons, grouped into categories and searchable by name or keyword: `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint. The page is self-contained and needs no server.
 
 The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Every one is a 24×24 viewBox with no hardcoded fill, so it inherits `currentColor` when inlined.
 
-### New in this release
-
-Ten icons were added in `1.0.0`, the first drawn for OpenIcons rather than inherited from PrimeIcons. They fill gaps the set had around developer and application UI, and are drawn on the same 24×24 grid at the same weight as the rest:
-
-| Icon | Class | Component |
-| --- | --- | --- |
-| Battery | `oi-battery` | `OiBattery` |
-| Bluetooth | `oi-bluetooth` | `OiBluetooth` |
-| Code branch | `oi-code-branch` | `OiCodeBranch` |
-| Keyboard | `oi-keyboard` | `OiKeyboard` |
-| Laptop | `oi-laptop` | `OiLaptop` |
-| Layers | `oi-layers` | `OiLayers` |
-| RSS | `oi-rss` | `OiRss` |
-| Sidebar | `oi-sidebar` | `OiSidebar` |
-| Terminal | `oi-terminal` | `OiTerminal` |
-| Wi-Fi off | `oi-wifi-slash` | `OiWifiSlash` |
-
-They occupy `U+EA3A`–`U+EA43`. No existing icon's codepoint moved, so upgrading cannot change which glyph an existing class renders.
-
 ## Migrating from PrimeIcons
 
-The class prefix changed from `pi` to `oi` in this release. Existing markup keeps working through a compatibility stylesheet, so the migration is a one-line dependency swap:
+Existing markup keeps working through a compatibility stylesheet, so the migration is a one-line dependency swap:
 
 ```diff
 - import 'primeicons/primeicons.css';
@@ -101,65 +86,26 @@ To move to the new prefix, import `@openvue/openicons/openicons.css` instead and
 
 One icon was removed rather than renamed: `pi-prime` was the PrimeTek logo mark, which the MIT license does not cover.
 
+## Stability
+
+Codepoints are append-only. New icons get new codepoints, and no existing icon is ever renamed, removed or renumbered, so upgrading can never change which glyph a class you already use renders. This is checked on every pull request.
+
 ## Ecosystem
 
 The fork spans the full toolchain, each piece maintained under the [openvi-foundation](https://github.com/orgs/openvi-foundation/repositories) organization.
 
-| Repository                                                                | Description                                    |
-| ------------------------------------------------------------------------- | ---------------------------------------------- |
-| [openvue](https://github.com/openvi-foundation/openvue)                   | The core Vue UI component library              |
-| [openux](https://github.com/openvi-foundation/openux)                     | Shared theming and design-token package        |
-| [openicons](https://github.com/openvi-foundation/openicons)               | Icon library (this repository)                 |
-| [openvue-tailwind](https://github.com/openvi-foundation/openvue-tailwind) | Components styled with Tailwind CSS            |
+| Repository                                                                | Description                             |
+| ------------------------------------------------------------------------- | --------------------------------------- |
+| [openvue](https://github.com/openvi-foundation/openvue)                   | The core Vue UI component library       |
+| [openux](https://github.com/openvi-foundation/openux)                     | Shared theming and design-token package |
+| [openicons](https://github.com/openvi-foundation/openicons)               | Icon library (this repository)          |
+| [openvue-tailwind](https://github.com/openvi-foundation/openvue-tailwind) | Components styled with Tailwind CSS     |
 
 ## Contributing
 
-We're building the initial maintainer team now. Issues and pull requests are open, and we'd welcome the help.
+OpenIcons is maintained by the openvi-foundation team together with the community. Icon requests, bug reports, fixes and new icons are all welcome.
 
-### Building
-
-Everything generated in this repository is built locally — no hosted tooling and no browser step:
-
-```bash
-pnpm install
-pnpm build
-```
-
-| Script | Output |
-| --- | --- |
-| `pnpm build:font` | `fonts/*` and the glyph rules of `openicons.css` |
-| `pnpm build:compat` | `openicons-compat.css` |
-| `pnpm build:vue` | `packages/vue/` components |
-| `pnpm build:docs` | `docs/index.html` |
-| `pnpm normalize` | rewrites `raw-svg/` into canonical form |
-| `pnpm check` | fails if any icon is not normalized |
-| `pnpm add-icon <name>` | registers a new icon in `selection.json` |
-
-`openicons.css`, `openicons-compat.css`, `fonts/`, `packages/vue/` and `docs/` are all generated. Edit `raw-svg/`, `selection.json`, or the scripts instead.
-
-The font build reads geometry and codepoints from [`selection.json`](selection.json), not from `raw-svg/`. IcoMoon normalized every icon individually when it produced the original font, so rebuilding from the 24×24 artwork would silently resize all 324 icons relative to what is already published. Keeping `selection.json` as the font's source makes the build reproducible against the shipped font — verified byte-identical geometry across the set.
-
-### Adding an icon
-
-Adding an icon no longer requires [IcoMoon](https://icomoon.io) or any other hosted tool:
-
-```bash
-cp my-icon.svg raw-svg/                                  # 24x24 artwork
-pnpm normalize                                           # canonical form, geometry verified
-pnpm add-icon my-icon --tags "keyword,keyword"           # registers it in selection.json
-# add "my-icon" to a category in scripts/categories.mjs
-pnpm build                                               # font, CSS, components, docs
-```
-
-`pnpm add-icon` reproduces the transform IcoMoon applied to the original set — a uniform scale onto the 1024 em grid, sized to fill the em and centred on the short axis — and assigns the next free codepoint. It refuses duplicate names and `fill-rule="evenodd"`, which the font would render differently once paths are merged.
-
-**Codepoints are append-only.** Never reuse or renumber one: the font is published, and a shifted codepoint silently changes which glyph every page already using it renders.
-
-Every icon must be listed in [`scripts/categories.mjs`](scripts/categories.mjs), which groups the docs catalog. `pnpm build:docs` fails on an icon with no category, on a category naming an icon that no longer exists, and on a stale icon count in either README — so the docs cannot quietly drift from the set.
-
-IcoMoon still opens `selection.json` if you prefer its editor for reassigning codepoints, but nothing in the build depends on it.
-
-The font build is deterministic — set `SOURCE_DATE_EPOCH` to stamp a real date into a release.
+Start with the [contributing guide](CONTRIBUTING.md) for the build setup and the steps for adding an icon.
 
 ## License
 
