@@ -65,12 +65,6 @@ import OiCheck from '@openvue/openicons-vue/icons/OiCheck';
 
 Icons default to `1em` and `currentColor`, so they follow surrounding text exactly as the font does. They are `aria-hidden` unless given a `title`, which promotes them to `role="img"` with an accessible name. See the [package README](packages/vue/README.md) for all props.
 
-## Browsing the set
-
-Open [`docs/index.html`](docs/index.html) to browse all 324 icons, grouped into categories and searchable by name or keyword: `create` finds `folder-plus`, `chart` also finds `table`. Pick any icon to copy its CSS class, component import, inline SVG or codepoint. The page is self-contained and needs no server.
-
-The source SVGs are in [`raw-svg/`](raw-svg/) if you need them individually. Every one is a 24×24 viewBox with no hardcoded fill, so it inherits `currentColor` when inlined.
-
 ## Migrating from PrimeIcons
 
 Existing markup keeps working through a compatibility stylesheet, so the migration is a one-line dependency swap:
