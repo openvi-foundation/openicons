@@ -8,10 +8,11 @@ import { openviLogo } from './theme/openvi-logo.mjs';
 const icons = new Map(loadIcons().map((icon) => [icon.name, icon]));
 
 const repo = 'https://github.com/openvi-foundation/openicons';
+const site = 'https://openicons.openvue.dev';
 
 export default defineConfig({
     title: 'OpenIcons',
-    description: `${icons.size} icons for Vue and the web, as a webfont and as Vue 3 components. An MIT fork of PrimeIcons.`,
+    description: 'The MIT fork of PrimeIcons. Icons for Vue and the web, as a webfont and as Vue 3 components.',
     lang: 'en-US',
     // Hosting isn't settled; a project page on GitHub Pages would need DOCS_BASE=/openicons/.
     base: process.env.DOCS_BASE || '/',
@@ -30,6 +31,23 @@ export default defineConfig({
             page.title = icon.name;
             page.description = `The ${icon.name} icon from OpenIcons. Use it as oi-${icon.name} in CSS or ${icon.component} in Vue.`;
         }
+    },
+
+    transformHead({ pageData, title, description }) {
+        const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '');
+        const url = `${site}/${path}`;
+
+        return [
+            ['link', { rel: 'canonical', href: url }],
+            ['meta', { property: 'og:type', content: 'website' }],
+            ['meta', { property: 'og:site_name', content: 'OpenIcons' }],
+            ['meta', { property: 'og:title', content: title }],
+            ['meta', { property: 'og:description', content: description }],
+            ['meta', { property: 'og:url', content: url }],
+            ['meta', { name: 'twitter:card', content: 'summary' }],
+            ['meta', { name: 'twitter:title', content: title }],
+            ['meta', { name: 'twitter:description', content: description }]
+        ];
     },
 
     themeConfig: {
