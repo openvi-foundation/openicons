@@ -9,7 +9,7 @@
 [![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons-vue.svg?label=%40openvue%2Fopenicons-vue)](https://www.npmjs.com/package/@openvue/openicons-vue)
 [![npm downloads](https://img.shields.io/npm/dt/%40openvue%2Fopenicons.svg)](https://www.npmjs.com/package/@openvue/openicons)
 
-[**Browse icons**](docs/index.html) · [**Vue components**](packages/vue/README.md) · [**Migrate from PrimeIcons**](#migrating-from-primeicons) · [**Changelog**](CHANGELOG.md)
+[**Documentation**](docs/) · [**Vue components**](packages/vue/README.md) · [**Migrate from PrimeIcons**](#migrating-from-primeicons) · [**Changelog**](CHANGELOG.md)
 
 </div>
 
@@ -17,7 +17,7 @@
 
 OpenIcons is a community-maintained continuation of PrimeIcons, the icon font used by PrimeVue and the wider Prime ecosystem, following its archival by the original maintainers. The project is stewarded by [openvi-foundation](https://github.com/openvi-foundation), an independent organization of experienced developers who use these libraries in production and are committed to keeping them maintained, stable, and open.
 
-OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 329 icons as a webfont and as Vue 3 components, with no runtime dependencies.
+OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships as a webfont and as Vue 3 components, with no runtime dependencies.
 
 ## Installation
 

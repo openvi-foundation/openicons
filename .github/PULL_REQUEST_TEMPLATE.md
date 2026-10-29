@@ -12,4 +12,4 @@
 - [ ] `pnpm check` passes and `pnpm build` output is committed
 - [ ] No existing icon was renamed, removed or given a different codepoint
 
-<!-- Generated files (fonts/, openicons*.css, packages/vue/, docs/) must not be edited by hand. See the README for the full "Adding an icon" steps. -->
+<!-- Generated files (fonts/, openicons*.css, packages/vue/) must not be edited by hand. See the README for the full "Adding an icon" steps. -->

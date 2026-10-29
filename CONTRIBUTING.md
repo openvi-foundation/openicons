@@ -20,17 +20,18 @@ Everything is built locally, with no hosted tooling and no browser step.
 
 | Script | Output |
 | --- | --- |
-| `pnpm build` | runs all four builds below |
+| `pnpm build` | runs the three builds below |
 | `pnpm build:font` | `fonts/*` and the glyph rules of `openicons.css` |
 | `pnpm build:compat` | `openicons-compat.css` |
 | `pnpm build:vue` | `packages/vue/` components |
-| `pnpm build:docs` | `docs/index.html` |
+| `pnpm docs:dev` | the documentation site, locally with hot reload |
+| `pnpm docs:build` | the documentation site, into `docs/.vitepress/dist` |
 | `pnpm normalize` | rewrites `raw-svg/` into canonical form |
 | `pnpm check` | fails if any icon is not normalized |
 | `pnpm check:codepoints` | fails if an existing codepoint changed against `origin/master` |
 | `pnpm add-icon <name>` | registers a new icon in `selection.json` |
 
-`openicons.css`, `openicons-compat.css`, `fonts/`, `packages/vue/` and `docs/` are all generated. Never edit them by hand: edit `raw-svg/`, `selection.json` or the scripts, then run `pnpm build` and commit the output.
+`openicons.css`, `openicons-compat.css`, `fonts/` and `packages/vue/` are all generated. Never edit them by hand: edit `raw-svg/`, `selection.json` or the scripts, then run `pnpm build` and commit the output.
 
 ## Adding an icon
 
@@ -39,14 +40,14 @@ cp my-icon.svg raw-svg/                                  # 24x24 artwork
 pnpm normalize                                           # canonical form, geometry verified
 pnpm add-icon my-icon --tags "keyword,keyword"           # registers it in selection.json
 # add "my-icon" to a category in scripts/categories.mjs
-pnpm build                                               # font, CSS, components, docs
+pnpm build                                               # font, CSS, components
 ```
 
 Draw on the 24×24 grid, centred, at the same weight as the surrounding icons. Look at a few existing icons in the same category before you start.
 
 `pnpm add-icon` reproduces the transform IcoMoon applied to the original set (a uniform scale onto the 1024 em grid, sized to fill the em and centred on the short axis) and assigns the next free codepoint. It refuses duplicate names and `fill-rule="evenodd"`, which the font would render differently once paths are merged.
 
-Every icon must be listed in [`scripts/categories.mjs`](scripts/categories.mjs), which groups the docs catalog. `pnpm build:docs` fails on an icon with no category, on a category naming an icon that no longer exists, and on a stale icon count in either README.
+Every icon must be listed in [`scripts/categories.mjs`](scripts/categories.mjs), which groups the icon catalog on the docs site. `pnpm docs:build` fails on an icon with no category and on a category naming an icon that no longer exists.
 
 ## Codepoints are append-only
 

@@ -27,15 +27,17 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "pnpm build:font && pnpm build:compat && pnpm build:vue && pnpm build:docs",
+    "build": "pnpm build:font && pnpm build:compat && pnpm build:vue",
     "build:font": "node scripts/build-font.mjs",
     "build:compat": "node scripts/build-compat.mjs",
     "build:vue": "node scripts/build-vue.mjs",
-    "build:docs": "node scripts/build-docs.mjs",
     "normalize": "node scripts/normalize-svg.mjs",
     "check": "node scripts/normalize-svg.mjs --check",
     "check:codepoints": "node scripts/check-codepoints.mjs",
-    "add-icon": "node scripts/add-icon.mjs"
+    "add-icon": "node scripts/add-icon.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "publishConfig": {
     "access": "public"
@@ -50,6 +52,7 @@
     "ttf2eot": "^3.1.0",
     "ttf2woff": "^3.0.0",
     "ttf2woff2": "^8.0.1",
+    "vitepress": "^1.6.4",
     "vue": "^3.5.40"
   }
 }

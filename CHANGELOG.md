@@ -6,6 +6,9 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
 
 ### Added
 
+- Documentation site, built with VitePress in `docs/`. It has a searchable catalog with a page for
+  every icon, and guides for the webfont, the Vue components, accessibility and migrating from
+  PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
 
