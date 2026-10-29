@@ -1346,3 +1346,23 @@
 .pi-drag-indicator:before {
     content: "\ea44";
 }
+
+.pi-sidebar-right:before {
+    content: "\ea45";
+}
+
+.pi-sidebar-close:before {
+    content: "\ea46";
+}
+
+.pi-sidebar-open:before {
+    content: "\ea47";
+}
+
+.pi-sidebar-right-close:before {
+    content: "\ea48";
+}
+
+.pi-sidebar-right-open:before {
+    content: "\ea49";
+}

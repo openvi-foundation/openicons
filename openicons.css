@@ -1367,3 +1367,23 @@
 .oi-drag-indicator:before {
     content: "\ea44";
 }
+
+.oi-sidebar-right:before {
+    content: "\ea45";
+}
+
+.oi-sidebar-close:before {
+    content: "\ea46";
+}
+
+.oi-sidebar-open:before {
+    content: "\ea47";
+}
+
+.oi-sidebar-right-close:before {
+    content: "\ea48";
+}
+
+.oi-sidebar-right-open:before {
+    content: "\ea49";
+}

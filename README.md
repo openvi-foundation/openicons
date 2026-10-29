@@ -17,7 +17,7 @@
 
 OpenIcons is a community-maintained continuation of PrimeIcons, the icon font used by PrimeVue and the wider Prime ecosystem, following its archival by the original maintainers. The project is stewarded by [openvi-foundation](https://github.com/openvi-foundation), an independent organization of experienced developers who use these libraries in production and are committed to keeping them maintained, stable, and open.
 
-OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 324 icons as a webfont and as Vue 3 components, with no runtime dependencies.
+OpenIcons is not affiliated with PrimeTek or PrimeUI. It ships 329 icons as a webfont and as Vue 3 components, with no runtime dependencies.
 
 ## Installation
 
