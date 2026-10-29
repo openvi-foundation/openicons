@@ -1,0 +1,106 @@
+/**
+ * Brand colours come from the OpenVue mark. The lighter green fails contrast as text on white,
+ * so light mode uses a deeper shade for links and buttons and keeps the logo green for accents.
+ */
+:root {
+    --vp-c-brand-1: #1d7a3e;
+    --vp-c-brand-2: #23904a;
+    --vp-c-brand-3: #2da055;
+    --vp-c-brand-soft: rgba(45, 160, 85, 0.12);
+
+    --vp-button-brand-bg: #1f8445;
+    --vp-button-brand-hover-bg: #1d7a3e;
+    --vp-button-brand-active-bg: #196b36;
+    --vp-button-brand-border: transparent;
+    --vp-button-brand-hover-border: transparent;
+
+    --vp-home-hero-name-color: var(--vp-c-text-1);
+}
+
+.dark {
+    --vp-c-brand-1: #4cc98d;
+    --vp-c-brand-2: #41b883;
+    --vp-c-brand-3: #2da055;
+    --vp-c-brand-soft: rgba(65, 184, 131, 0.16);
+
+    --vp-button-brand-bg: #2da055;
+    --vp-button-brand-hover-bg: #35a873;
+    --vp-button-brand-active-bg: #23904a;
+}
+
+/* Small bordered buttons used for copy and download actions. */
+.action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 0 12px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 7px;
+    background: var(--vp-c-bg);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vp-c-text-1);
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.action:hover {
+    border-color: var(--vp-c-brand-1);
+    color: var(--vp-c-brand-1);
+}
+
+.action.done {
+    border-color: var(--vp-c-brand-1);
+    color: var(--vp-c-brand-1);
+}
+
+/* Keyword chips. */
+.tag {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: var(--vp-c-default-soft);
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--vp-c-text-2);
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.tag:hover {
+    background: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand-1);
+}
+
+/* OpenVi Foundation mark, in the footer and on the home page. */
+.openvi-logo {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.openvi-ink {
+    fill: var(--vp-c-text-1);
+}
+
+.openvi-accent {
+    fill: var(--vp-c-brand-3);
+}
+
+.VPFooter .footer-openvi {
+    display: block;
+    width: fit-content;
+    height: 22px;
+    margin: 0 auto 16px;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+}
+
+.VPFooter .footer-openvi:hover {
+    opacity: 1;
+}
+
+/* Icons rendered inline in guide prose. */
+.vp-doc .inline-icon {
+    vertical-align: -0.15em;
+}

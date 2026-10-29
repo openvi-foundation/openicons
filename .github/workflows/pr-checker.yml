@@ -39,6 +39,10 @@ jobs:
             - name: Build
               run: pnpm run build
 
+            # Also fails on an icon missing from scripts/categories.mjs.
+            - name: Docs
+              run: pnpm run docs:build
+
             - name: Generated files are committed
               run: |
                   if [ -n "$(git status --porcelain)" ]; then
