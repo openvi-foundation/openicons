@@ -2,6 +2,13 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## Unreleased
+
+### Added
+
+- `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
+  `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
+
 ## 1.0.0
 
 First stable release. The packages are unchanged from `1.0.0-beta.1`; this promotes that build
