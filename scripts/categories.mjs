@@ -58,7 +58,7 @@ export const categories = {
         'backward', 'camera', 'fast-backward', 'fast-forward', 'forward', 'headphones', 'image',
         'images', 'microphone', 'pause', 'pause-circle', 'play', 'play-circle', 'step-backward',
         'step-backward-alt', 'step-forward', 'step-forward-alt', 'stop', 'stop-circle', 'video',
-        'volume-down', 'volume-off', 'volume-up'
+        'volume-down', 'volume-off', 'volume-up', 'music'
     ],
     'Communication': [
         'at', 'bell', 'bell-slash', 'comment', 'comments', 'envelope', 'inbox', 'link', 'megaphone',
