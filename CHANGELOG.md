@@ -11,6 +11,11 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
+- `repeat` (`U+EA4A`), a looped arrow for repeating a playlist. Available as `oi-repeat`, `pi-repeat`
+  and `OiRepeat`.
+- `repeat-one` (`U+EA4B`), the repeat loop with a "1" for repeating a single track. Available as `oi-repeat-one`,
+  `pi-repeat-one` and `OiRepeatOne`.
+- `repeat-slash` (`U+EA4C`), the repeat loop struck through for repeat turned off. Available as `oi-repeat-slash`, `pi-repeat-slash` and `OiRepeatSlash`.
 
 ## 1.0.0
 
