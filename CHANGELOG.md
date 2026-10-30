@@ -11,6 +11,8 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
+- `shuffle` (`U+EA4A`), crossed arrows for random playback order. Available as `oi-shuffle`,
+  `pi-shuffle` and `OiShuffle`.
 
 ## 1.0.0
 
