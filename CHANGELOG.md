@@ -11,6 +11,7 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
+- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`, `pi-music` and `OIMusic`.
 
 ## 1.0.0
 

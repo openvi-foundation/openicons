@@ -195,6 +195,7 @@ export { default as OiMinus } from './icons/OiMinus.js';
 export { default as OiMobile } from './icons/OiMobile.js';
 export { default as OiMoneyBill } from './icons/OiMoneyBill.js';
 export { default as OiMoon } from './icons/OiMoon.js';
+export { default as OiMusic } from './icons/OiMusic.js';
 export { default as OiObjectsColumn } from './icons/OiObjectsColumn.js';
 export { default as OiPalette } from './icons/OiPalette.js';
 export { default as OiPaperclip } from './icons/OiPaperclip.js';

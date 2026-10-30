@@ -1387,3 +1387,7 @@
 .oi-sidebar-right-open:before {
     content: "\ea49";
 }
+
+.oi-music:before {
+    content: "\ea4a";
+}
