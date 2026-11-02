@@ -43,6 +43,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vue/server-renderer": "^3.5.40",
     "esbuild": "^0.28.1",
     "svg2ttf": "^6.1.0",
