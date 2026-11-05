@@ -1370,3 +1370,7 @@
 .pi-music:before {
     content: "\ea4a";
 }
+
+.pi-microphone-slash:before {
+    content: "\ea4b";
+}

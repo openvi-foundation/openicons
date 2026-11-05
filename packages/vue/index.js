@@ -188,6 +188,7 @@ export { default as OiMars } from './icons/OiMars.js';
 export { default as OiMegaphone } from './icons/OiMegaphone.js';
 export { default as OiMicrochipAi } from './icons/OiMicrochipAi.js';
 export { default as OiMicrochip } from './icons/OiMicrochip.js';
+export { default as OiMicrophoneSlash } from './icons/OiMicrophoneSlash.js';
 export { default as OiMicrophone } from './icons/OiMicrophone.js';
 export { default as OiMicrosoft } from './icons/OiMicrosoft.js';
 export { default as OiMinusCircle } from './icons/OiMinusCircle.js';
