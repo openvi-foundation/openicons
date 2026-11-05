@@ -235,6 +235,7 @@ export { default as OiShield } from './icons/OiShield.js';
 export { default as OiShop } from './icons/OiShop.js';
 export { default as OiShoppingBag } from './icons/OiShoppingBag.js';
 export { default as OiShoppingCart } from './icons/OiShoppingCart.js';
+export { default as OiShuffle } from './icons/OiShuffle.js';
 export { default as OiSidebarClose } from './icons/OiSidebarClose.js';
 export { default as OiSidebarOpen } from './icons/OiSidebarOpen.js';
 export { default as OiSidebarRightClose } from './icons/OiSidebarRightClose.js';

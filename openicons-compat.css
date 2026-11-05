@@ -1374,3 +1374,7 @@
 .pi-microphone-slash:before {
     content: "\ea4b";
 }
+
+.pi-shuffle:before {
+    content: "\ea4c";
+}

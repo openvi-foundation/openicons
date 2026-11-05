@@ -1395,3 +1395,7 @@
 .oi-microphone-slash:before {
     content: "\ea4b";
 }
+
+.oi-shuffle:before {
+    content: "\ea4c";
+}
