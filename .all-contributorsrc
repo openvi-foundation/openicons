@@ -1,0 +1,56 @@
+{
+  "projectName": "openicons",
+  "projectOwner": "openvi-foundation",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 64,
+  "contributorsPerLine": 8,
+  "commitConvention": "angular",
+  "commitType": "docs",
+  "contributors": [
+    {
+      "login": "NJevric",
+      "name": "Nikola Jevrić",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46942531?v=4",
+      "profile": "https://github.com/NJevric",
+      "contributions": [
+        "code",
+        "doc",
+        "infra",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "sane6",
+      "name": "Srđan Sanadrović",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57320614?v=4",
+      "profile": "https://github.com/sane6",
+      "contributions": [
+        "maintenance",
+        "review"
+      ]
+    },
+    {
+      "login": "tokainz",
+      "name": "tokainz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74963455?v=4",
+      "profile": "https://github.com/tokainz",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "sfxcode",
+      "name": "Tom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4506602?v=4",
+      "profile": "https://github.com/sfxcode",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ]
+}

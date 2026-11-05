@@ -9,6 +9,10 @@
 [![npm](https://img.shields.io/npm/v/%40openvue%2Fopenicons-vue.svg?label=%40openvue%2Fopenicons-vue)](https://www.npmjs.com/package/@openvue/openicons-vue)
 [![npm downloads](https://img.shields.io/npm/dt/%40openvue%2Fopenicons.svg)](https://www.npmjs.com/package/@openvue/openicons)
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 [**Documentation**](docs/) · [**Vue components**](packages/vue/README.md) · [**Migrate from PrimeIcons**](#migrating-from-primeicons) · [**Changelog**](CHANGELOG.md)
 
 </div>
@@ -100,6 +104,29 @@ The fork spans the full toolchain, each piece maintained under the [openvi-found
 OpenIcons is maintained by the openvi-foundation team together with the community. Icon requests, bug reports, fixes and new icons are all welcome.
 
 Start with the [contributing guide](CONTRIBUTING.md) for the build setup and the steps for adding an icon.
+
+## Contributors ✨
+
+Everyone who has helped build OpenIcons since the fork: code, icons, docs, bug reports, and ideas.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/NJevric"><img src="https://avatars.githubusercontent.com/u/46942531?v=4?s=64" width="64px;" alt="Nikola Jevrić"/><br /><sub><b>Nikola Jevrić</b></sub></a><br /><a href="https://github.com/openvi-foundation/openicons/commits?author=NJevric" title="Code">💻</a> <a href="https://github.com/openvi-foundation/openicons/commits?author=NJevric" title="Documentation">📖</a> <a href="#infra-NJevric" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-NJevric" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/sane6"><img src="https://avatars.githubusercontent.com/u/57320614?v=4?s=64" width="64px;" alt="Srđan Sanadrović"/><br /><sub><b>Srđan Sanadrović</b></sub></a><br /><a href="#maintenance-sane6" title="Maintenance">🚧</a> <a href="https://github.com/openvi-foundation/openicons/pulls?q=is%3Apr+reviewed-by%3Asane6" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/tokainz"><img src="https://avatars.githubusercontent.com/u/74963455?v=4?s=64" width="64px;" alt="tokainz"/><br /><sub><b>tokainz</b></sub></a><br /><a href="https://github.com/openvi-foundation/openicons/commits?author=tokainz" title="Code">💻</a> <a href="#design-tokainz" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/sfxcode"><img src="https://avatars.githubusercontent.com/u/4506602?v=4?s=64" width="64px;" alt="Tom"/><br /><sub><b>Tom</b></sub></a><br /><a href="https://github.com/openvi-foundation/openicons/issues?q=author%3Asfxcode" title="Bug reports">🐛</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 
