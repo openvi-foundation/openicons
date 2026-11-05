@@ -1388,14 +1388,26 @@
     content: "\ea49";
 }
 
-.oi-repeat:before {
+.oi-music:before {
     content: "\ea4a";
 }
 
-.oi-repeat-one:before {
+.oi-microphone-slash:before {
     content: "\ea4b";
 }
 
-.oi-repeat-slash:before {
+.oi-shuffle:before {
     content: "\ea4c";
+}
+
+.oi-repeat:before {
+    content: "\ea4d";
+}
+
+.oi-repeat-one:before {
+    content: "\ea4e";
+}
+
+.oi-repeat-slash:before {
+    content: "\ea4f";
 }

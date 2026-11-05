@@ -6,16 +6,34 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
 
 ### Added
 
+- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`,
+  `pi-music` and `OiMusic`. Thanks to @tokainz.
+- `microphone-slash` icon (`U+EA4B`), a struck-through microphone for a muted input. Available as
+  `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash`. Thanks to @tokainz.
+- `shuffle` icon (`U+EA4C`), crossed arrows for random playback order. Available as `oi-shuffle`,
+  `pi-shuffle` and `OiShuffle`. Thanks to @tokainz.
+- `repeat` (`U+EA4D`), a looped arrow for repeating a playlist. Available as `oi-repeat`, `pi-repeat`
+  and `OiRepeat`. Thanks to @tokainz.
+- `repeat-one` (`U+EA4E`), the repeat loop with a "1" for repeating a single track. Available as `oi-repeat-one`,
+  `pi-repeat-one` and `OiRepeatOne`. Thanks to @tokainz.
+- `repeat-slash` (`U+EA4F`), the repeat loop struck through for repeat turned off. Available as `oi-repeat-slash`, `pi-repeat-slash` and `OiRepeatSlash`. Thanks to @tokainz.
+
+## 1.1.0
+
+Six new icons, bringing the set to 329. Every existing codepoint, CSS class and component name is
+unchanged, so upgrading from 1.0.0 is a version bump with no migration.
+
+### Added
+
 - Documentation site, built with VitePress in `docs/`. It has a searchable catalog with a page for
   every icon, and guides for the webfont, the Vue components, accessibility and migrating from
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
-- `repeat` (`U+EA4A`), a looped arrow for repeating a playlist. Available as `oi-repeat`, `pi-repeat`
-  and `OiRepeat`.
-- `repeat-one` (`U+EA4B`), the repeat loop with a "1" for repeating a single track. Available as `oi-repeat-one`,
-  `pi-repeat-one` and `OiRepeatOne`.
-- `repeat-slash` (`U+EA4C`), the repeat loop struck through for repeat turned off. Available as `oi-repeat-slash`, `pi-repeat-slash` and `OiRepeatSlash`.
+- Sidebar icons to pair with the existing `sidebar`: `sidebar-right` (`U+EA45`), `sidebar-close`
+  (`U+EA46`), `sidebar-open` (`U+EA47`), `sidebar-right-close` (`U+EA48`) and `sidebar-right-open`
+  (`U+EA49`). Available as `oi-*`, `pi-*` and `OiSidebarRight`, `OiSidebarClose`, `OiSidebarOpen`,
+  `OiSidebarRightClose`, `OiSidebarRightOpen`. Thanks to @tokainz.
 
 ## 1.0.0
 
