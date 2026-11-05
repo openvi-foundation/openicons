@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/openvi-foundation/openicons/issues"
   },
-  "homepage": "https://github.com/openvi-foundation/openicons#readme",
+  "homepage": "https://openicons.openvue.dev",
   "files": [
     "fonts",
     "raw-svg",
