@@ -2,6 +2,15 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## Unreleased
+
+### Added
+
+- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`,
+  `pi-music` and `OiMusic`.
+- `microphone-slash` icon (`U+EA4B`), a struck-through microphone for a muted input. Available as
+  `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash`.
+
 ## 1.1.0
 
 Six new icons, bringing the set to 329. Every existing codepoint, CSS class and component name is
@@ -18,9 +27,6 @@ unchanged, so upgrading from 1.0.0 is a version bump with no migration.
   (`U+EA46`), `sidebar-open` (`U+EA47`), `sidebar-right-close` (`U+EA48`) and `sidebar-right-open`
   (`U+EA49`). Available as `oi-*`, `pi-*` and `OiSidebarRight`, `OiSidebarClose`, `OiSidebarOpen`,
   `OiSidebarRightClose`, `OiSidebarRightOpen`. Thanks to @tokainz.
-- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`, `pi-music` and `OiMusic`.
-- `microphone-slash` (`U+EA4A`), a struck-through microphone for a muted input. Available as `oi-microphone-slash`,
-  `pi-microphone-slash` and `OIMicrophoneSlash`.
 
 ## 1.0.0
 
