@@ -92,7 +92,8 @@ export const categories = {
         'globe', 'home', 'map', 'map-marker', 'truck', 'warehouse'
     ],
     'Nature & Weather': [
-        'bolt', 'cloud', 'moon', 'sun'
+        'bolt', 'cloud', 'cloud-bolt', 'cloud-rain', 'cloud-snow', 'drop', 'moon', 'snowflake', 'sun', 
+        'waves', 'wind'
     ],
     'Brands': [
         'amazon', 'android', 'apple', 'discord', 'facebook', 'github', 'google', 'instagram',
