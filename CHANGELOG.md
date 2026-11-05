@@ -2,7 +2,10 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
-## Unreleased
+## 1.1.0
+
+Six new icons, bringing the set to 329. Every existing codepoint, CSS class and component name is
+unchanged, so upgrading from 1.0.0 is a version bump with no migration.
 
 ### Added
 
@@ -11,6 +14,10 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
+- Sidebar icons to pair with the existing `sidebar`: `sidebar-right` (`U+EA45`), `sidebar-close`
+  (`U+EA46`), `sidebar-open` (`U+EA47`), `sidebar-right-close` (`U+EA48`) and `sidebar-right-open`
+  (`U+EA49`). Available as `oi-*`, `pi-*` and `OiSidebarRight`, `OiSidebarClose`, `OiSidebarOpen`,
+  `OiSidebarRightClose`, `OiSidebarRightOpen`. Thanks to @tokainz.
 - `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`, `pi-music` and `OiMusic`.
 
 ## 1.0.0
