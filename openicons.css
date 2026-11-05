@@ -1388,6 +1388,10 @@
     content: "\ea49";
 }
 
-.oi-microphone-slash:before {
+.oi-music:before {
     content: "\ea4a";
+}
+
+.oi-microphone-slash:before {
+    content: "\ea4b";
 }
