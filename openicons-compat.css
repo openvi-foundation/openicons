@@ -1378,3 +1378,15 @@
 .pi-shuffle:before {
     content: "\ea4c";
 }
+
+.pi-repeat:before {
+    content: "\ea4d";
+}
+
+.pi-repeat-one:before {
+    content: "\ea4e";
+}
+
+.pi-repeat-slash:before {
+    content: "\ea4f";
+}

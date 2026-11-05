@@ -57,8 +57,9 @@ export const categories = {
     'Media': [
         'backward', 'camera', 'fast-backward', 'fast-forward', 'forward', 'headphones', 'image',
         'images', 'microphone', 'microphone-slash', 'music', 'pause', 'pause-circle', 'play',
-        'play-circle', 'shuffle', 'step-backward', 'step-backward-alt', 'step-forward',
-        'step-forward-alt', 'stop', 'stop-circle', 'video', 'volume-down', 'volume-off', 'volume-up'
+        'play-circle', 'repeat', 'repeat-one', 'repeat-slash', 'shuffle', 'step-backward',
+        'step-backward-alt', 'step-forward', 'step-forward-alt', 'stop', 'stop-circle', 'video',
+        'volume-down', 'volume-off', 'volume-up'
     ],
     'Communication': [
         'at', 'bell', 'bell-slash', 'comment', 'comments', 'envelope', 'inbox', 'link', 'megaphone',

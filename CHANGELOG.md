@@ -12,6 +12,12 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
   `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash`. Thanks to @tokainz.
 - `shuffle` icon (`U+EA4C`), crossed arrows for random playback order. Available as `oi-shuffle`,
   `pi-shuffle` and `OiShuffle`. Thanks to @tokainz.
+- `repeat` icon (`U+EA4D`), a looped arrow for repeating a playlist. Available as `oi-repeat`,
+  `pi-repeat` and `OiRepeat`. Thanks to @tokainz.
+- `repeat-one` icon (`U+EA4E`), the repeat loop with a "1" for repeating a single track. Available
+  as `oi-repeat-one`, `pi-repeat-one` and `OiRepeatOne`. Thanks to @tokainz.
+- `repeat-slash` icon (`U+EA4F`), the repeat loop struck through for repeat turned off. Available as
+  `oi-repeat-slash`, `pi-repeat-slash` and `OiRepeatSlash`. Thanks to @tokainz.
 
 ## 1.1.0
 
