@@ -7,11 +7,11 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
 ### Added
 
 - `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`,
-  `pi-music` and `OiMusic` Thanks to @tokainz.
+  `pi-music` and `OiMusic`. Thanks to @tokainz.
 - `microphone-slash` icon (`U+EA4B`), a struck-through microphone for a muted input. Available as
-  `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash` Thanks to @tokainz.
+  `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash`. Thanks to @tokainz.
 - `shuffle` icon (`U+EA4C`), crossed arrows for random playback order. Available as `oi-shuffle`,
-  `pi-shuffle` and `OiShuffle` Thanks to @tokainz.
+  `pi-shuffle` and `OiShuffle`. Thanks to @tokainz.
 
 ## 1.1.0
 
