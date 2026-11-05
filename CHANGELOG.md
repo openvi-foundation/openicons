@@ -2,7 +2,10 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
-## Unreleased
+## 1.2.0
+
+Six new icons, bringing the set to 335. Every existing codepoint, CSS class and component name is
+unchanged, so upgrading from 1.1.0 is a version bump with no migration.
 
 ### Added
 
