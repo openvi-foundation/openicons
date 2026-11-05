@@ -1411,3 +1411,31 @@
 .oi-repeat-slash:before {
     content: "\ea4f";
 }
+
+.oi-cloud-rain:before {
+    content: "\ea50";
+}
+
+.oi-cloud-bolt:before {
+    content: "\ea51";
+}
+
+.oi-cloud-snow:before {
+    content: "\ea52";
+}
+
+.oi-waves:before {
+    content: "\ea53";
+}
+
+.oi-wind:before {
+    content: "\ea54";
+}
+
+.oi-drop:before {
+    content: "\ea55";
+}
+
+.oi-snowflake:before {
+    content: "\ea56";
+}

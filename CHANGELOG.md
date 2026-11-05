@@ -2,6 +2,25 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## Unreleased
+
+### Added
+
+- `cloud-rain` icon (`U+EA50`), a cloud with rain lines for rainy weather. Available as
+  `oi-cloud-rain`, `pi-cloud-rain` and `OiCloudRain`.
+- `cloud-bolt` icon (`U+EA51`), a cloud with a lightning bolt for thunderstorms. Available as
+  `oi-cloud-bolt`, `pi-cloud-bolt` and `OiCloudBolt`.
+- `cloud-snow` icon (`U+EA52`), a cloud with snowflakes for snowfall. Available as
+  `oi-cloud-snow`, `pi-cloud-snow` and `OiCloudSnow`.
+- `waves` icon (`U+EA53`), stacked wavy lines for water, sea and floods. Available as `oi-waves`,
+  `pi-waves` and `OiWaves`.
+- `wind` icon (`U+EA54`), curved air lines for wind and breeze. Available as `oi-wind`, `pi-wind`
+  and `OiWind`.
+- `drop` icon (`U+EA55`), a single water droplet for water, liquids and humidity. Available as
+  `oi-drop`, `pi-drop` and `OiDrop`.
+- `snowflake` icon (`U+EA56`), a six-armed snowflake for snow, winter and cold. Available as
+  `oi-snowflake`, `pi-snowflake` and `OiSnowflake`.
+
 ## 1.2.0
 
 Six new icons, bringing the set to 335. Every existing codepoint, CSS class and component name is
