@@ -1366,3 +1366,7 @@
 .pi-sidebar-right-open:before {
     content: "\ea49";
 }
+
+.pi-music:before {
+    content: "\ea4a";
+}

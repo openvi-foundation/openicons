@@ -18,6 +18,7 @@ unchanged, so upgrading from 1.0.0 is a version bump with no migration.
   (`U+EA46`), `sidebar-open` (`U+EA47`), `sidebar-right-close` (`U+EA48`) and `sidebar-right-open`
   (`U+EA49`). Available as `oi-*`, `pi-*` and `OiSidebarRight`, `OiSidebarClose`, `OiSidebarOpen`,
   `OiSidebarRightClose`, `OiSidebarRightOpen`. Thanks to @tokainz.
+- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`, `pi-music` and `OiMusic`.
 
 ## 1.0.0
 
