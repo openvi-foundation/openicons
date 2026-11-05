@@ -6,13 +6,29 @@ For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARC
 
 ### Added
 
+- `music` icon (`U+EA4A`), a music note for songs and audio content. Available as `oi-music`,
+  `pi-music` and `OiMusic` Thanks to @tokainz.
+- `microphone-slash` icon (`U+EA4B`), a struck-through microphone for a muted input. Available as
+  `oi-microphone-slash`, `pi-microphone-slash` and `OiMicrophoneSlash` Thanks to @tokainz.
+- `shuffle` icon (`U+EA4C`), crossed arrows for random playback order. Available as `oi-shuffle`,
+  `pi-shuffle` and `OiShuffle` Thanks to @tokainz.
+
+## 1.1.0
+
+Six new icons, bringing the set to 329. Every existing codepoint, CSS class and component name is
+unchanged, so upgrading from 1.0.0 is a version bump with no migration.
+
+### Added
+
 - Documentation site, built with VitePress in `docs/`. It has a searchable catalog with a page for
   every icon, and guides for the webfont, the Vue components, accessibility and migrating from
   PrimeIcons. Run it locally with `pnpm docs:dev`.
 - `drag-indicator` icon (`U+EA44`), a 2×3 dot grip for drag handles. Available as `oi-drag-indicator`,
   `pi-drag-indicator` and `OiDragIndicator`. Thanks to @tokainz.
-- `shuffle` (`U+EA4A`), crossed arrows for random playback order. Available as `oi-shuffle`,
-  `pi-shuffle` and `OiShuffle`.
+- Sidebar icons to pair with the existing `sidebar`: `sidebar-right` (`U+EA45`), `sidebar-close`
+  (`U+EA46`), `sidebar-open` (`U+EA47`), `sidebar-right-close` (`U+EA48`) and `sidebar-right-open`
+  (`U+EA49`). Available as `oi-*`, `pi-*` and `OiSidebarRight`, `OiSidebarClose`, `OiSidebarOpen`,
+  `OiSidebarRightClose`, `OiSidebarRightOpen`. Thanks to @tokainz.
 
 ## 1.0.0
 

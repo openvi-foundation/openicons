@@ -1367,6 +1367,14 @@
     content: "\ea49";
 }
 
-.pi-shuffle:before {
+.pi-music:before {
     content: "\ea4a";
+}
+
+.pi-microphone-slash:before {
+    content: "\ea4b";
+}
+
+.pi-shuffle:before {
+    content: "\ea4c";
 }
