@@ -1390,3 +1390,31 @@
 .pi-repeat-slash:before {
     content: "\ea4f";
 }
+
+.pi-cloud-rain:before {
+    content: "\ea50";
+}
+
+.pi-cloud-bolt:before {
+    content: "\ea51";
+}
+
+.pi-cloud-snow:before {
+    content: "\ea52";
+}
+
+.pi-waves:before {
+    content: "\ea53";
+}
+
+.pi-wind:before {
+    content: "\ea54";
+}
+
+.pi-drop:before {
+    content: "\ea55";
+}
+
+.pi-snowflake:before {
+    content: "\ea56";
+}
