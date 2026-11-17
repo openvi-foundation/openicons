@@ -2,24 +2,27 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
-## Unreleased
+## 1.3.0
+
+Seven new weather and nature icons, bringing the set to 342. Every existing codepoint, CSS class
+and component name is unchanged, so upgrading from 1.2.0 is a version bump with no migration.
 
 ### Added
 
 - `cloud-rain` icon (`U+EA50`), a cloud with rain lines for rainy weather. Available as
-  `oi-cloud-rain`, `pi-cloud-rain` and `OiCloudRain`.
+  `oi-cloud-rain`, `pi-cloud-rain` and `OiCloudRain`. Thanks to @tokainz.
 - `cloud-bolt` icon (`U+EA51`), a cloud with a lightning bolt for thunderstorms. Available as
-  `oi-cloud-bolt`, `pi-cloud-bolt` and `OiCloudBolt`.
+  `oi-cloud-bolt`, `pi-cloud-bolt` and `OiCloudBolt`. Thanks to @tokainz.
 - `cloud-snow` icon (`U+EA52`), a cloud with snowflakes for snowfall. Available as
-  `oi-cloud-snow`, `pi-cloud-snow` and `OiCloudSnow`.
+  `oi-cloud-snow`, `pi-cloud-snow` and `OiCloudSnow`. Thanks to @tokainz.
 - `waves` icon (`U+EA53`), stacked wavy lines for water, sea and floods. Available as `oi-waves`,
-  `pi-waves` and `OiWaves`.
+  `pi-waves` and `OiWaves`. Thanks to @tokainz.
 - `wind` icon (`U+EA54`), curved air lines for wind and breeze. Available as `oi-wind`, `pi-wind`
-  and `OiWind`.
+  and `OiWind`. Thanks to @tokainz.
 - `drop` icon (`U+EA55`), a single water droplet for water, liquids and humidity. Available as
-  `oi-drop`, `pi-drop` and `OiDrop`.
+  `oi-drop`, `pi-drop` and `OiDrop`. Thanks to @tokainz.
 - `snowflake` icon (`U+EA56`), a six-armed snowflake for snow, winter and cold. Available as
-  `oi-snowflake`, `pi-snowflake` and `OiSnowflake`.
+  `oi-snowflake`, `pi-snowflake` and `OiSnowflake`. Thanks to @tokainz.
 
 ## 1.2.0
 
