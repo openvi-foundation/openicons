@@ -2,6 +2,30 @@
 
 For the PrimeIcons history up to 7.0.0, see [CHANGELOG_ARCHIVE.md](CHANGELOG_ARCHIVE.md).
 
+## Unreleased
+
+### Added
+
+- `arrows-compare` icon (`U+EA57`), two offset arrows pointing towards each other for comparing or
+  swapping two items. Available as `oi-arrows-compare`, `pi-arrows-compare` and `OiArrowsCompare`.
+- `arrows-repeat` icon (`U+EA58`), two angular arrows forming a loop for reposting and sharing.
+  Available as `oi-arrows-repeat`, `pi-arrows-repeat` and `OiArrowsRepeat`.
+- `arrows-split` icon (`U+EA59`), one line branching into two arrows. Available as
+  `oi-arrows-split`, `pi-arrows-split` and `OiArrowsSplit`.
+- `arrows-merge` icon (`U+EA5A`), two lines joining into one arrow. Available as
+  `oi-arrows-merge`, `pi-arrows-merge` and `OiArrowsMerge`.
+- `chevrons-up-down` icon (`U+EA5B`), chevrons pointing apart for expanding or opening a select.
+  Available as `oi-chevrons-up-down`, `pi-chevrons-up-down` and `OiChevronsUpDown`.
+- `chevrons-down-up` icon (`U+EA5C`), chevrons pointing together for collapsing. Available as
+  `oi-chevrons-down-up`, `pi-chevrons-down-up` and `OiChevronsDownUp`.
+- `arrow-u-turn-left` icon (`U+EA5D`), an arrow turning back to the left, a straight-lined
+  alternative to `undo`. Available as `oi-arrow-u-turn-left`, `pi-arrow-u-turn-left` and
+  `OiArrowUTurnLeft`.
+- `arrow-u-turn-right` icon (`U+EA5E`), an arrow turning back to the right, usable as redo.
+  Available as `oi-arrow-u-turn-right`, `pi-arrow-u-turn-right` and `OiArrowUTurnRight`.
+- `crop` icon (`U+EA5F`), two overlapping crop corners for cropping images. Available as
+  `oi-crop`, `pi-crop` and `OiCrop`.
+
 ## 1.3.0
 
 Seven new weather and nature icons, bringing the set to 342. Every existing codepoint, CSS class

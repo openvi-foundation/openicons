@@ -1439,3 +1439,39 @@
 .oi-snowflake:before {
     content: "\ea56";
 }
+
+.oi-arrows-compare:before {
+    content: "\ea57";
+}
+
+.oi-arrows-repeat:before {
+    content: "\ea58";
+}
+
+.oi-arrows-split:before {
+    content: "\ea59";
+}
+
+.oi-arrows-merge:before {
+    content: "\ea5a";
+}
+
+.oi-chevrons-up-down:before {
+    content: "\ea5b";
+}
+
+.oi-chevrons-down-up:before {
+    content: "\ea5c";
+}
+
+.oi-arrow-u-turn-left:before {
+    content: "\ea5d";
+}
+
+.oi-arrow-u-turn-right:before {
+    content: "\ea5e";
+}
+
+.oi-crop:before {
+    content: "\ea5f";
+}
