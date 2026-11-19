@@ -16,11 +16,13 @@ export const categories = {
         'arrow-down', 'arrow-down-left', 'arrow-down-right',
         'arrow-down-left-and-arrow-up-right-to-center', 'arrow-up-right-and-arrow-down-left-from-center',
         'arrow-left', 'arrow-right', 'arrow-right-arrow-left',
+        'arrow-u-turn-left', 'arrow-u-turn-right',
         'arrow-up', 'arrow-up-left', 'arrow-up-right',
-        'arrows-alt', 'arrows-h', 'arrows-v',
+        'arrows-alt', 'arrows-compare', 'arrows-h', 'arrows-merge', 'arrows-repeat', 'arrows-split', 'arrows-v',
         'caret-down', 'caret-left', 'caret-right', 'caret-up',
         'chevron-circle-down', 'chevron-circle-left', 'chevron-circle-right', 'chevron-circle-up',
         'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up',
+        'chevrons-down-up', 'chevrons-up-down',
         'expand', 'external-link', 'history', 'refresh', 'replay', 'sync', 'undo', 'sign-in', 'sign-out'
     ],
     'Interface': [
@@ -32,7 +34,7 @@ export const categories = {
         'window-maximize', 'window-minimize', 'lightbulb', 'sparkles', 'drag-indicator'
     ],
     'Editing & Tools': [
-        'bookmark', 'bookmark-fill', 'clipboard', 'clone', 'copy', 'delete-left', 'eraser', 'flag',
+        'bookmark', 'bookmark-fill', 'clipboard', 'clone', 'copy', 'crop', 'delete-left', 'eraser', 'flag',
         'flag-fill', 'hammer', 'heart', 'heart-fill', 'key', 'lock', 'lock-open', 'unlock', 'pencil',
         'pen-to-square', 'save', 'shield', 'star', 'star-fill', 'star-half', 'star-half-fill',
         'thumbs-down', 'thumbs-down-fill', 'thumbs-up', 'thumbs-up-fill', 'thumbtack', 'trash',

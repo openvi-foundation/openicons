@@ -1418,3 +1418,39 @@
 .pi-snowflake:before {
     content: "\ea56";
 }
+
+.pi-arrows-compare:before {
+    content: "\ea57";
+}
+
+.pi-arrows-repeat:before {
+    content: "\ea58";
+}
+
+.pi-arrows-split:before {
+    content: "\ea59";
+}
+
+.pi-arrows-merge:before {
+    content: "\ea5a";
+}
+
+.pi-chevrons-up-down:before {
+    content: "\ea5b";
+}
+
+.pi-chevrons-down-up:before {
+    content: "\ea5c";
+}
+
+.pi-arrow-u-turn-left:before {
+    content: "\ea5d";
+}
+
+.pi-arrow-u-turn-right:before {
+    content: "\ea5e";
+}
+
+.pi-crop:before {
+    content: "\ea5f";
+}
